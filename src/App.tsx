@@ -5,6 +5,7 @@ import {
     Route,
     Routes
 } from 'react-router-dom'
+import Dashboard from "./components/Dashboard/Dashboard.tsx";
 const App = () => {
     return (
         <Router>
@@ -12,7 +13,7 @@ const App = () => {
                 <GlobalStyles />
                 <Routes>
                     <Route path='/' element={<div>home</div>} />
-                    <Route path='/dashboard' element={<div>dashboard</div>} />
+                    <Route path='/dashboard' element={<Dashboard />} />
                     <Route path='/profile' element={<div>profile</div>}/>
                 </Routes>
             </Layout>
